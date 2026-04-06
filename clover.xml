@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1759612095">
+  <project timestamp="1759612095" name="Clover Coverage">
+    <package name="Alto\CommonMark">
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Bridge/Symfony/AltoCommonMarkBundle.php">
+        <class name="Alto\CommonMark\AltoCommonMarkBundle" namespace="Alto\CommonMark">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="7" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="9" type="stmt" count="0"/>
+        <line num="12" type="method" name="render" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <metrics loc="18" ncloc="18" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Alto\CommonMark\Extension\CodeBlockTitle">
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/CodeBlockTitle/CodeBlockTitleExtension.php">
+        <class name="Alto\CommonMark\Extension\CodeBlockTitle\CodeBlockTitleExtension" namespace="Alto\CommonMark\Extension\CodeBlockTitle">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+        </class>
+        <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="17" type="stmt" count="2"/>
+        <line num="19" type="method" name="register" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="21" type="stmt" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <metrics loc="31" ncloc="30" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+      </file>
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/CodeBlockTitle/CodeBlockTitleRenderer.php">
+        <class name="Alto\CommonMark\Extension\CodeBlockTitle\CodeBlockTitleRenderer" namespace="Alto\CommonMark\Extension\CodeBlockTitle">
+          <metrics complexity="4" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="17" coveredelements="15"/>
+        </class>
+        <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="17" type="stmt" count="2"/>
+        <line num="19" type="method" name="render" visibility="public" complexity="3" crap="3.00" count="2"/>
+        <line num="21" type="stmt" count="2"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <metrics loc="45" ncloc="44" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="17" coveredelements="15"/>
+      </file>
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/CodeBlockTitle/InfoStringParser.php">
+        <class name="Alto\CommonMark\Extension\CodeBlockTitle\InfoStringParser" namespace="Alto\CommonMark\Extension\CodeBlockTitle">
+          <metrics complexity="4" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="8" coveredelements="8"/>
+        </class>
+        <line num="10" type="method" name="parse" visibility="public" complexity="4" crap="4" count="2"/>
+        <line num="12" type="stmt" count="2"/>
+        <line num="13" type="stmt" count="2"/>
+        <line num="15" type="stmt" count="2"/>
+        <line num="16" type="stmt" count="2"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="2"/>
+        <metrics loc="25" ncloc="24" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="8" coveredelements="8"/>
+      </file>
+    </package>
+    <package name="Alto\CommonMark\Extension\HeadingLevelDown">
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/HeadingLevelDown/HeadingLevelDownExtension.php">
+        <class name="Alto\CommonMark\Extension\HeadingLevelDown\HeadingLevelDownExtension" namespace="Alto\CommonMark\Extension\HeadingLevelDown">
+          <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+        </class>
+        <line num="13" type="method" name="__construct" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="22" type="method" name="register" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <metrics loc="36" ncloc="33" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+      </file>
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/HeadingLevelDown/HeadingLevelDownProcessor.php">
+        <class name="Alto\CommonMark\Extension\HeadingLevelDown\HeadingLevelDownProcessor" namespace="Alto\CommonMark\Extension\HeadingLevelDown">
+          <metrics complexity="7" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="14" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="17" type="method" name="onDocumentParsed" visibility="public" complexity="6" crap="42" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <metrics loc="42" ncloc="41" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="14" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="Alto\CommonMark\Extension\HeadingSection">
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/HeadingSection/HeadingSectionExtension.php">
+        <class name="Alto\CommonMark\Extension\HeadingSection\HeadingSectionExtension" namespace="Alto\CommonMark\Extension\HeadingSection">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="13" type="method" name="register" visibility="public" complexity="1" crap="1" count="13"/>
+        <line num="15" type="stmt" count="13"/>
+        <line num="16" type="stmt" count="13"/>
+        <metrics loc="18" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/HeadingSection/Section.php">
+        <class name="Alto\CommonMark\Extension\HeadingSection\Section" namespace="Alto\CommonMark\Extension\HeadingSection">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="11" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/HeadingSection/SectionRenderer.php">
+        <class name="Alto\CommonMark\Extension\HeadingSection\SectionRenderer" namespace="Alto\CommonMark\Extension\HeadingSection">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+        </class>
+        <line num="14" type="method" name="render" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <metrics loc="20" ncloc="20" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </file>
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/HeadingSection/SectioningListener.php">
+        <class name="Alto\CommonMark\Extension\HeadingSection\SectioningListener" namespace="Alto\CommonMark\Extension\HeadingSection">
+          <metrics complexity="7" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="18" coveredelements="18"/>
+        </class>
+        <line num="12" type="method" name="__invoke" visibility="public" complexity="7" crap="7" count="6"/>
+        <line num="14" type="stmt" count="6"/>
+        <line num="16" type="stmt" count="6"/>
+        <line num="17" type="stmt" count="6"/>
+        <line num="19" type="stmt" count="6"/>
+        <line num="20" type="stmt" count="5"/>
+        <line num="21" type="stmt" count="5"/>
+        <line num="23" type="stmt" count="5"/>
+        <line num="24" type="stmt" count="5"/>
+        <line num="26" type="stmt" count="5"/>
+        <line num="27" type="stmt" count="4"/>
+        <line num="29" type="stmt" count="4"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="4"/>
+        <line num="34" type="stmt" count="4"/>
+        <line num="35" type="stmt" count="4"/>
+        <line num="39" type="stmt" count="5"/>
+        <line num="42" type="stmt" count="6"/>
+        <metrics loc="45" ncloc="44" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="18" coveredelements="18"/>
+      </file>
+    </package>
+    <package name="Alto\CommonMark\Extension\LinkRewriter">
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/LinkRewriter/LinkRewriterExtension.php">
+        <class name="Alto\CommonMark\Extension\LinkRewriter\LinkRewriterExtension" namespace="Alto\CommonMark\Extension\LinkRewriter">
+          <metrics complexity="7" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="18" coveredelements="18"/>
+        </class>
+        <line num="20" type="method" name="__construct" visibility="public" complexity="6" crap="6" count="9"/>
+        <line num="22" type="stmt" count="9"/>
+        <line num="23" type="stmt" count="9"/>
+        <line num="24" type="stmt" count="6"/>
+        <line num="26" type="stmt" count="9"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="9"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="9"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="9"/>
+        <line num="37" type="stmt" count="9"/>
+        <line num="38" type="stmt" count="9"/>
+        <line num="40" type="stmt" count="9"/>
+        <line num="41" type="stmt" count="9"/>
+        <line num="44" type="method" name="register" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="46" type="stmt" count="9"/>
+        <line num="47" type="stmt" count="9"/>
+        <metrics loc="50" ncloc="46" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="18" coveredelements="18"/>
+      </file>
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/LinkRewriter/LinkRewriterProcessor.php">
+        <class name="Alto\CommonMark\Extension\LinkRewriter\LinkRewriterProcessor" namespace="Alto\CommonMark\Extension\LinkRewriter">
+          <metrics complexity="6" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
+        </class>
+        <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="22" type="stmt" count="9"/>
+        <line num="25" type="method" name="onDocumentParsed" visibility="public" complexity="5" crap="5" count="9"/>
+        <line num="27" type="stmt" count="9"/>
+        <line num="29" type="stmt" count="9"/>
+        <line num="30" type="stmt" count="9"/>
+        <line num="31" type="stmt" count="9"/>
+        <line num="34" type="stmt" count="9"/>
+        <line num="36" type="stmt" count="9"/>
+        <line num="37" type="stmt" count="7"/>
+        <line num="38" type="stmt" count="9"/>
+        <line num="39" type="stmt" count="2"/>
+        <metrics loc="44" ncloc="40" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
+      </file>
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Extension/LinkRewriter/Rewriter.php">
+        <class name="Alto\CommonMark\Extension\LinkRewriter\Rewriter" namespace="Alto\CommonMark\Extension\LinkRewriter">
+          <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="12" coveredelements="12"/>
+        </class>
+        <line num="11" type="method" name="baseUri" visibility="public" complexity="2" crap="2" count="6"/>
+        <line num="13" type="stmt" count="6"/>
+        <line num="14" type="stmt" count="6"/>
+        <line num="15" type="stmt" count="3"/>
+        <line num="18" type="stmt" count="3"/>
+        <line num="19" type="stmt" count="6"/>
+        <line num="22" type="method" name="map" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="27" type="method" name="pattern" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="32" type="method" name="callback" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <metrics loc="37" ncloc="37" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="12" coveredelements="12"/>
+      </file>
+    </package>
+    <package name="Alto\CommonMark\Testing">
+      <file name="/Users/simonandre/Sites/alto/commonmark/src/Testing/CommonMarkExtensionTestCase.php">
+        <class name="Alto\CommonMark\Testing\CommonMarkExtensionTestCase" namespace="Alto\CommonMark\Testing">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="28" coveredstatements="0" elements="37" coveredelements="0"/>
+        </class>
+        <line num="22" type="method" name="getExtension" visibility="protected" complexity="0" crap="0" count="0"/>
+        <line num="29" type="method" name="getExtraExtensions" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="34" type="method" name="setUp" visibility="protected" complexity="2" crap="6" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="49" type="method" name="tearDown" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="57" type="method" name="environment" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="63" type="method" name="converter" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="66" type="stmt" count="0"/>
+        <line num="72" type="method" name="html" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="74" type="stmt" count="0"/>
+        <line num="75" type="stmt" count="0"/>
+        <line num="83" type="method" name="assertHtmlContains" visibility="protected" complexity="2" crap="6" count="0"/>
+        <line num="85" type="stmt" count="0"/>
+        <line num="86" type="stmt" count="0"/>
+        <line num="87" type="stmt" count="0"/>
+        <line num="94" type="method" name="assertHtmlSameAsFixture" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="96" type="stmt" count="0"/>
+        <line num="97" type="stmt" count="0"/>
+        <line num="99" type="stmt" count="0"/>
+        <line num="100" type="stmt" count="0"/>
+        <line num="102" type="stmt" count="0"/>
+        <line num="103" type="stmt" count="0"/>
+        <line num="105" type="stmt" count="0"/>
+        <metrics loc="108" ncloc="89" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="28" coveredstatements="0" elements="37" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="14" loc="530" ncloc="495" classes="13" methods="31" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="135" coveredstatements="81" elements="166" coveredelements="95"/>
+  </project>
+</coverage>

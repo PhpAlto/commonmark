@@ -1,0 +1,51 @@
+{
+    "name": "alto/commonmark-table-of-contents",
+    "description": "CommonMark extension that generates a linked table of contents from document headings at @toc directives.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "commonmark",
+        "commonmark-extension",
+        "markdown",
+        "toc",
+        "table-of-contents",
+        "headings",
+        "navigation",
+        "anchor",
+        "directive",
+        "php",
+        "alto"
+    ],
+    "authors": [
+        {
+            "name": "Simon André",
+            "email": "smn.andre@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/PhpAlto/commonmark",
+    "support": {
+        "issues": "https://github.com/PhpAlto/commonmark/issues",
+        "docs": "https://github.com/PhpAlto/commonmark/blob/main/docs/TableOfContents.md"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/smnandre"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "league/commonmark": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alto\\CommonMark\\Extension\\TableOfContents\\": ""
+        }
+    },
+    "extra": {
+        "thanks": {
+            "name": "alto/commonmark",
+            "url": "https://github.com/PhpAlto/commonmark"
+        }
+    }
+}

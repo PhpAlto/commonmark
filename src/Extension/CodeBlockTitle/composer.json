@@ -1,0 +1,50 @@
+{
+    "name": "alto/commonmark-code-block-title",
+    "description": "CommonMark extension that parses title=\"...\" from fenced code block info strings and renders them as <figcaption> inside <figure>.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "commonmark",
+        "commonmark-extension",
+        "markdown",
+        "code-block",
+        "title",
+        "figcaption",
+        "figure",
+        "fenced-code",
+        "php",
+        "alto"
+    ],
+    "authors": [
+        {
+            "name": "Simon André",
+            "email": "smn.andre@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/PhpAlto/commonmark",
+    "support": {
+        "issues": "https://github.com/PhpAlto/commonmark/issues",
+        "docs": "https://github.com/PhpAlto/commonmark/blob/main/docs/CodeBlockTitle.md"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/smnandre"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "league/commonmark": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alto\\CommonMark\\Extension\\CodeBlockTitle\\": ""
+        }
+    },
+    "extra": {
+        "thanks": {
+            "name": "alto/commonmark",
+            "url": "https://github.com/PhpAlto/commonmark"
+        }
+    }
+}

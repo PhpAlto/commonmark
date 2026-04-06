@@ -1,0 +1,49 @@
+{
+    "name": "alto/commonmark-import",
+    "description": "CommonMark extension that embeds raw file content at @import directives, with line range, language, and indent options.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "commonmark",
+        "commonmark-extension",
+        "markdown",
+        "import",
+        "file-embed",
+        "code-embed",
+        "directive",
+        "php",
+        "alto"
+    ],
+    "authors": [
+        {
+            "name": "Simon André",
+            "email": "smn.andre@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/PhpAlto/commonmark",
+    "support": {
+        "issues": "https://github.com/PhpAlto/commonmark/issues",
+        "docs": "https://github.com/PhpAlto/commonmark/blob/main/docs/Import.md"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/smnandre"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "league/commonmark": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alto\\CommonMark\\Extension\\Import\\": ""
+        }
+    },
+    "extra": {
+        "thanks": {
+            "name": "alto/commonmark",
+            "url": "https://github.com/PhpAlto/commonmark"
+        }
+    }
+}

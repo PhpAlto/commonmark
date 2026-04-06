@@ -1,0 +1,33 @@
+<h1>Source Extension Examples</h1><h2>Show a PHP file</h2><div class="source-block"><div class="source-path">samples/Calculator.php</div><pre><code class="language-php">&lt;?php
+
+declare(strict_types=1);
+
+namespace App;
+
+class Calculator
+{
+    public function add(int $a, int $b): int
+    {
+        return $a + $b;
+    }
+
+    public function subtract(int $a, int $b): int
+    {
+        return $a - $b;
+    }
+
+    public function multiply(int $a, int $b): int
+    {
+        return $a * $b;
+    }
+
+    public function divide(float $a, float $b): float
+    {
+        if (0.0 === $b) {
+            throw new \DivisionByZeroError(&#039;Division by zero&#039;);
+        }
+
+        return $a / $b;
+    }
+}
+</code></pre></div><h2>Show specific lines with line numbers</h2><div class="source-block"><div class="source-path">samples/Calculator.php</div><pre><code class="language-php"><span class="line"><span class="line-number">5</span>namespace App;</span><span class="line"><span class="line-number">6</span></span><span class="line"><span class="line-number">7</span>class Calculator</span><span class="line"><span class="line-number">8</span>{</span><span class="line"><span class="line-number">9</span>    public function add(int $a, int $b): int</span><span class="line"><span class="line-number">10</span>    {</span><span class="line"><span class="line-number">11</span>        return $a + $b;</span><span class="line"><span class="line-number">12</span>    }</span><span class="line"><span class="line-number">13</span></span><span class="line"><span class="line-number">14</span>    public function subtract(int $a, int $b): int</span><span class="line"><span class="line-number">15</span>    {</span></code></pre></div>

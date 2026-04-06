@@ -1,0 +1,50 @@
+{
+    "name": "alto/commonmark-heading-level",
+    "description": "CommonMark extension that shifts, maps, or transforms heading levels via a config array or callback.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "commonmark",
+        "commonmark-extension",
+        "markdown",
+        "heading",
+        "heading-level",
+        "shift",
+        "transform",
+        "document-composition",
+        "php",
+        "alto"
+    ],
+    "authors": [
+        {
+            "name": "Simon André",
+            "email": "smn.andre@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/PhpAlto/commonmark",
+    "support": {
+        "issues": "https://github.com/PhpAlto/commonmark/issues",
+        "docs": "https://github.com/PhpAlto/commonmark/blob/main/docs/HeadingLevel.md"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/smnandre"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "league/commonmark": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alto\\CommonMark\\Extension\\HeadingLevel\\": ""
+        }
+    },
+    "extra": {
+        "thanks": {
+            "name": "alto/commonmark",
+            "url": "https://github.com/PhpAlto/commonmark"
+        }
+    }
+}

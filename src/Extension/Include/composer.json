@@ -1,0 +1,49 @@
+{
+    "name": "alto/commonmark-include",
+    "description": "CommonMark extension that includes and re-parses external Markdown files at @include directives.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "commonmark",
+        "commonmark-extension",
+        "markdown",
+        "include",
+        "file-include",
+        "directive",
+        "document-composition",
+        "php",
+        "alto"
+    ],
+    "authors": [
+        {
+            "name": "Simon André",
+            "email": "smn.andre@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/PhpAlto/commonmark",
+    "support": {
+        "issues": "https://github.com/PhpAlto/commonmark/issues",
+        "docs": "https://github.com/PhpAlto/commonmark/blob/main/docs/Include.md"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/smnandre"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "league/commonmark": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alto\\CommonMark\\Extension\\Include\\": ""
+        }
+    },
+    "extra": {
+        "thanks": {
+            "name": "alto/commonmark",
+            "url": "https://github.com/PhpAlto/commonmark"
+        }
+    }
+}

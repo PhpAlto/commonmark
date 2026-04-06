@@ -1,0 +1,31 @@
+<div class="tabs-container" data-tabs-id="tabs-X"><div class="tabs-list" role="tablist"><button class="tab active" id="tabs-X-tab-0" role="tab" aria-selected="true" aria-controls="tabs-X-panel-0" data-tab-index="0">Installation</button><button class="tab" id="tabs-X-tab-1" role="tab" aria-selected="false" aria-controls="tabs-X-panel-1" data-tab-index="1">Configuration</button><button class="tab" id="tabs-X-tab-2" role="tab" aria-selected="false" aria-controls="tabs-X-panel-2" data-tab-index="2">Usage</button></div><div class="tab-panels"><div class="tab-panel active" id="tabs-X-panel-0" role="tabpanel" aria-labelledby="tabs-X-tab-0" data-panel-index="0"><div>Run `composer require alto/commonmark`.</div></div><div class="tab-panel" id="tabs-X-panel-1" role="tabpanel" aria-labelledby="tabs-X-tab-1" data-panel-index="1" hidden><div>Pass options to the constructor.</div></div><div class="tab-panel" id="tabs-X-panel-2" role="tabpanel" aria-labelledby="tabs-X-tab-2" data-panel-index="2" hidden><div>Add the extension to the environment.</div></div></div></div><script>
+            (function() {
+                const container = document.querySelector('[data-tabs-id="tabs-X"]');
+                if (!container) return;
+                
+                const tabs = container.querySelectorAll('[role="tab"]');
+                const panels = container.querySelectorAll('[role="tabpanel"]');
+                
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const index = parseInt(tab.dataset.tabIndex);
+                        
+                        // Deactivate all tabs and panels
+                        tabs.forEach(t => {
+                            t.classList.remove('active');
+                            t.setAttribute('aria-selected', 'false');
+                        });
+                        panels.forEach(p => {
+                            p.classList.remove('active');
+                            p.setAttribute('hidden', '');
+                        });
+                        
+                        // Activate selected tab and panel
+                        tab.classList.add('active');
+                        tab.setAttribute('aria-selected', 'true');
+                        panels[index].classList.add('active');
+                        panels[index].removeAttribute('hidden');
+                    });
+                });
+            })();
+            </script>

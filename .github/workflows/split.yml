@@ -1,0 +1,44 @@
+name: Split Packages
+
+on:
+  workflow_dispatch:
+    inputs:
+      reference:
+        description: 'Git ref to split (branch, tag, or SHA)'
+        required: true
+        default: 'main'
+
+jobs:
+  split:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - { prefix: 'src/Extension/CodeBlockTitle', repo: 'commonmark-code-block-title' }
+          - { prefix: 'src/Extension/ContentSlicer', repo: 'commonmark-content-slicer' }
+          - { prefix: 'src/Extension/HeadingLevel', repo: 'commonmark-heading-level' }
+          - { prefix: 'src/Extension/Import', repo: 'commonmark-import' }
+          - { prefix: 'src/Extension/Include', repo: 'commonmark-include' }
+          - { prefix: 'src/Extension/LinkRewriter', repo: 'commonmark-link-rewriter' }
+          - { prefix: 'src/Extension/Source', repo: 'commonmark-source' }
+          - { prefix: 'src/Extension/TableOfContents', repo: 'commonmark-table-of-contents' }
+          - { prefix: 'src/Extension/Tabs', repo: 'commonmark-tabs' }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Split ${{ matrix.package.prefix }}
+        uses: claudiodekker/splitsh-action@v1.0.0
+        env:
+          # Personal Access Token with push access to split repositories
+          GITHUB_TOKEN: ${{ secrets.MONOREPO_SPLIT_TOKEN }}
+        with:
+          prefix: ${{ matrix.package.prefix }}
+          remote: https://github.com/${{ vars.SPLIT_REPO_OWNER }}/${{ matrix.package.repo }}.git
+          reference: ${{ inputs.reference }}
+          as_tag: ${{ startsWith(inputs.reference, 'refs/tags/') || startsWith(inputs.reference, 'v') }}

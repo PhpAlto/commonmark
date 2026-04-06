@@ -1,0 +1,81 @@
+{
+    "name": "alto/commonmark",
+    "description": "A collection of CommonMark extensions: code block titles, content slicing, heading level adjustment, file import/include, source display, table of contents, tabs, and link rewriting.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "commonmark",
+        "commonmark-extension",
+        "markdown",
+        "extension",
+        "league-commonmark",
+        "code-block",
+        "content-slicer",
+        "heading",
+        "import",
+        "include",
+        "link-rewriter",
+        "source",
+        "table-of-contents",
+        "tabs",
+        "php",
+        "alto"
+    ],
+    "authors": [
+        {
+            "name": "Simon André",
+            "email": "smn.andre@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/PhpAlto/commonmark",
+    "support": {
+        "issues": "https://github.com/PhpAlto/commonmark/issues",
+        "docs": "https://github.com/PhpAlto/commonmark#readme"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/smnandre"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "league/commonmark": "^2.7"
+    },
+    "replace": {
+        "alto/commonmark-code-block-title": "self.version",
+        "alto/commonmark-content-slicer": "self.version",
+        "alto/commonmark-heading-level": "self.version",
+        "alto/commonmark-import": "self.version",
+        "alto/commonmark-include": "self.version",
+        "alto/commonmark-link-rewriter": "self.version",
+        "alto/commonmark-source": "self.version",
+        "alto/commonmark-table-of-contents": "self.version",
+        "alto/commonmark-tabs": "self.version"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.92",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alto\\CommonMark\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alto\\CommonMark\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "cs": "vendor/bin/php-cs-fixer fix",
+        "qa": [
+            "@cs",
+            "@sa",
+            "@test"
+        ],
+        "sa": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/phpunit"
+    }
+}
