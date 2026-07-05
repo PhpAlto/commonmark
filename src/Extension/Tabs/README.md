@@ -64,4 +64,4 @@ This extension is actively developed in the [`alto/commonmark`](https://github.c
 
 ## License
 
-MIT License — [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)
+MIT License -- [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)

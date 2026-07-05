@@ -2,7 +2,7 @@
 
 ## Summary
 
-Genuinely rare in the CommonMark ecosystem. Most processors stop at rendering headings as `<h1>`…`<h6>` tags — this one goes further and restructures the document into a properly nested `<section>` tree that mirrors the heading hierarchy. The result is semantic HTML you can actually target with CSS, query with JavaScript, and traverse with accessibility tooling. No custom syntax required.
+Genuinely rare in the CommonMark ecosystem. Most processors stop at rendering headings as `<h1>`…`<h6>` tags -- this one goes further and restructures the document into a properly nested `<section>` tree that mirrors the heading hierarchy. The result is semantic HTML you can actually target with CSS, query with JavaScript, and traverse with accessibility tooling. No custom syntax required.
 
 ## Installation
 
@@ -55,4 +55,4 @@ This extension is actively developed in the [`alto/commonmark`](https://github.c
 
 ## License
 
-MIT License — [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)
+MIT License -- [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)

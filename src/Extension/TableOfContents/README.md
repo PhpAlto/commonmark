@@ -2,7 +2,7 @@
 
 ## Summary
 
-A must-have for any document longer than a page. Place `@toc` where you want the contents list and the extension takes care of the rest: headings are collected, anchor IDs are assigned, and a navigable nested list is rendered — with filtering by level and configurable output style.
+A must-have for any document longer than a page. Place `@toc` where you want the contents list and the extension takes care of the rest: headings are collected, anchor IDs are assigned, and a navigable nested list is rendered -- with filtering by level and configurable output style.
 
 ## Installation
 
@@ -59,4 +59,4 @@ This extension is actively developed in the [`alto/commonmark`](https://github.c
 
 ## License
 
-MIT License — [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)
+MIT License -- [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)

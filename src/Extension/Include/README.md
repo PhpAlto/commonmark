@@ -2,7 +2,7 @@
 
 ## Summary
 
-The backbone of large documentation sets. `@include` directives pull in external markdown fragments and fully parse them inline — making one-file-per-section composition possible without a build system. Supports optional line-range selection for embedding partial files, with circular-include protection to keep deeply nested setups safe.
+The backbone of large documentation sets. `@include` directives pull in external markdown fragments and fully parse them inline -- making one-file-per-section composition possible without a build system. Supports optional line-range selection for embedding partial files, with circular-include protection to keep deeply nested setups safe.
 
 ## Installation
 
@@ -53,4 +53,4 @@ This extension is actively developed in the [`alto/commonmark`](https://github.c
 
 ## License
 
-MIT License — [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)
+MIT License -- [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)
