@@ -4,14 +4,13 @@
     "license": "MIT",
     "type": "library",
     "keywords": [
-        "commonmark",
-        "commonmark-extension",
         "markdown",
+        "commonmark",
         "section",
+        "sectioning",
         "heading",
-        "hierarchy",
         "semantic-html",
-        "document-structure",
+        "commonmark-extension",
         "php",
         "alto"
     ],

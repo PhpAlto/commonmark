@@ -4,15 +4,13 @@
     "license": "MIT",
     "type": "library",
     "keywords": [
-        "commonmark",
-        "commonmark-extension",
         "markdown",
+        "commonmark",
         "source",
         "source-code",
         "syntax-highlight",
         "code-block",
-        "file-embed",
-        "directive",
+        "commonmark-extension",
         "php",
         "alto"
     ],
