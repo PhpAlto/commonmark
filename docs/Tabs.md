@@ -145,13 +145,11 @@ The extension generates full WAI-ARIA markup:
 
 ## See Also
 
-- [ContentSlicer](ContentSlicer.md) — wrap heading sections in semantic
+- [ContentSlicer](ContentSlicer.md): wrap heading sections in semantic
   `<section>` tags
 
 ---
 
 > **This package is part of
 the [alto/commonmark](https://github.com/PhpAlto/commonmark) monorepo.**  
-> This repository is a read-only split — to file issues, open pull requests, or
-> contribute, please use the main repository: *
-*https://github.com/PhpAlto/commonmark**
+> This repository is a read-only split. To file issues, open pull requests, or contribute, use the main repository: **https://github.com/PhpAlto/commonmark**

@@ -1,4 +1,4 @@
-# Alto CommonMark — Documentation
+# Alto CommonMark Documentation
 
 Nine `league/commonmark` extensions, each solving a specific documentation
 problem cleanly.

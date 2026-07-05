@@ -95,7 +95,7 @@ Only the first five lines of `changelog.md` are included and parsed.
 
 | Feature                    | `@import`     | `@include` |
 |----------------------------|---------------|------------|
-| Re-parses as Markdown      | No — raw text | **Yes**    |
+| Re-parses as Markdown      | No, raw text  | **Yes**    |
 | `lang` option (code block) | Yes           | No         |
 | `indent` option            | Yes           | No         |
 | `allowedExtensions` filter | No            | Yes        |
@@ -128,13 +128,11 @@ All paths are resolved with `realpath()` and validated against `basePath`:
 
 ## See Also
 
-- [Import](Import.md) — embeds raw file content (not re-parsed)
-- [Source](Source.md) — displays source code with syntax highlighting
+- [Import](Import.md): embeds raw file content (not re-parsed)
+- [Source](Source.md): displays source code with syntax highlighting
 
 ---
 
 > **This package is part of
 the [alto/commonmark](https://github.com/PhpAlto/commonmark) monorepo.**  
-> This repository is a read-only split — to file issues, open pull requests, or
-> contribute, please use the main repository: *
-*https://github.com/PhpAlto/commonmark**
+> This repository is a read-only split. To file issues, open pull requests, or contribute, use the main repository: **https://github.com/PhpAlto/commonmark**

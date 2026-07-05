@@ -69,7 +69,7 @@ new ImportExtension(string $basePath = '.', int $maxDepth = 10)
 <p>Welcome to the guide.</p>
 ```
 
-The file content is embedded verbatim — it is **not** re-parsed as Markdown.
+The file content is embedded verbatim; it is **not** re-parsed as Markdown.
 
 ### Code import with options
 
@@ -108,13 +108,11 @@ Errors render as an inline `<div>` so the rest of the page remains intact:
 
 ## See Also
 
-- [Include](Include.md) — re-parses the included file as Markdown
-- [Source](Source.md) — displays source code with syntax highlighting
+- [Include](Include.md): re-parses the included file as Markdown
+- [Source](Source.md): displays source code with syntax highlighting
 
 ---
 
 > **This package is part of
 the [alto/commonmark](https://github.com/PhpAlto/commonmark) monorepo.**  
-> This repository is a read-only split — to file issues, open pull requests, or
-> contribute, please use the main repository: *
-*https://github.com/PhpAlto/commonmark**
+> This repository is a read-only split. To file issues, open pull requests, or contribute, use the main repository: **https://github.com/PhpAlto/commonmark**
