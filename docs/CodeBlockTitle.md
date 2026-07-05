@@ -1,7 +1,7 @@
 # CodeBlockTitle Extension
 
-Parses `title="..."` attributes from fenced code block info strings and renders
-them as `<figcaption>` elements inside `<figure>` tags.
+Reads a `title="..."` attribute from a fenced code block's info string and wraps
+the block in a `<figure>` with a `<figcaption>`.
 
 ## Basic Usage
 
@@ -14,223 +14,72 @@ $environment = new Environment();
 $environment->addExtension(new CodeBlockTitleExtension());
 
 $converter = new MarkdownConverter($environment);
-
-$markdown = <<<'MD'
-    ```php title="example.php"
-    echo "Hello, World!";
-    ```
-MD;
-
-echo $converter->convert($markdown);
 ```
 
-## Features
-
-- Parses `title="..."` from fenced code block info strings
-- Wraps code blocks in `<figure>` elements with `<figcaption>`
-- Preserves the language specifier alongside the title
-- Works with all code block languages
-- Integrates seamlessly with other extensions
-
-## Syntax
-
-Add a `title="..."` attribute to your code block's info string:
-
-```markdown
-    ```javascript title="app.js"
-    function greet(name) {
-      console.log(`Hello, ${name}!`);
-    }
-    ```
+````markdown
+```php title="example.php"
+echo "Hello, World!";
 ```
-
-The `title` attribute can contain any text and supports special characters.
-Quotes within the title should be escaped:
-
-```markdown
-    ```bash title="script with \"quotes\""
-    echo "test"
-    ```
-```
-
-## Output
-
-The extension transforms:
-
-```markdown
-    ```php title="example.php"
-    echo "Hello, World!";
-    ```
-```
-
-Into:
+````
 
 ```html
 
-<figure>
-    <figcaption>example.php</figcaption>
-    <pre><code class="language-php">echo "Hello, World!";</code></pre>
+<figure class="code-block has-title" data-title="example.php">
+<figcaption class="code-title">example.php</figcaption>
+<pre><code class="language-php">echo &quot;Hello, World!&quot;;
+</code></pre>
 </figure>
 ```
 
-## Configuration
+A block without a title renders as the usual `<pre><code>` with no `<figure>`.
 
-The extension requires no configuration and can be registered without
-parameters:
+## Syntax
+
+Add the attribute to the info string, right after the language:
+
+````markdown
+```javascript title="app.js"
+console.log("hi");
+```
+````
+
+- `filename="..."` is accepted as an alias for `title`.
+- Escape quotes inside the title with a backslash: `title="a \"quoted\" name"`.
+
+## Constructor
 
 ```php
-$environment->addExtension(new CodeBlockTitleExtension());
+new CodeBlockTitleExtension(?NodeRendererInterface $baseRenderer = null)
 ```
 
-Optionally, you can provide a custom base renderer:
+| Parameter      | Type                          | Default                | Description                                        |
+|----------------|-------------------------------|------------------------|----------------------------------------------------|
+| `baseRenderer` | `?NodeRendererInterface`      | `new FencedCodeRenderer()` | Renderer used to build the inner `<pre><code>`. Override to compose with another code renderer. |
 
-```php
-use League\CommonMark\Extension\CommonMark\Renderer\Block\FencedCodeRenderer;
+## Styling
 
-$baseRenderer = new FencedCodeRenderer();
-$environment->addExtension(new CodeBlockTitleExtension($baseRenderer));
-```
-
-## Advanced Usage
-
-### With Multiple Extensions
-
-Combine with other extensions for enhanced functionality:
-
-```php
-$environment = new Environment();
-$environment->addExtension(new CommonMarkCoreExtension());
-$environment->addExtension(new CodeBlockTitleExtension());
-$environment->addExtension(new ContentSlicerExtension());
-
-$converter = new MarkdownConverter($environment);
-```
-
-### Styling the Figure
-
-The extension generates semantic HTML that can be styled with CSS:
+The output uses stable hooks: `.code-block.has-title`, `.code-title`, and a
+`data-title` attribute.
 
 ```css
-figure {
-  border: 1px solid #E0E0E0;
-  border-radius: 4px;
-  padding: 12px;
-  margin: 16px 0;
+.code-block.has-title {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
 }
 
-figcaption {
-  font-size: 12px;
-  font-weight: 600;
-  color: #666666;
-  margin-bottom: 8px;
-  font-family: 'Monaco', 'Menlo', monospace;
+.code-title {
+    font: 600 12px/1 ui-monospace, monospace;
+    color: #666;
+    padding: 8px 12px;
 }
-
-figure code {
-  display: block;
-  overflow-x: auto;
-}
-```
-
-## Implementation Details
-
-- **Pattern**: Renderer-based decorator
-- **Priority**: 10 (runs before default renderers)
-- **Custom Nodes**: None (uses standard `FencedCode` node)
-- **Event Listeners**: None
-
-The extension decorates the default `FencedCodeRenderer` and extracts the title
-attribute during rendering. This approach ensures compatibility with other
-rendering extensions.
-
-## Examples
-
-### Multiple Code Blocks with Titles
-
-```markdown
-    ```javascript title="index.js"
-    import express from 'express';
-    const app = express();
-    app.listen(3000);
-    ```
-    
-    ```html title="index.html"
-    <!DOCTYPE html>
-    <html>
-      <head><title>App</title></head>
-      <body>Hello World</body>
-    </html>
-    ```
-```
-
-### Without Title
-
-Blocks without a title attribute work normally:
-
-```markdown
-    ```python
-    def hello():
-        print("Hello, World!")
-    ```
-```
-
-Renders as:
-
-```html
-
-<pre><code class="language-python">def hello():
-    print("Hello, World!")</code></pre>
-```
-
-### With Complex Titles
-
-Titles can include file paths and descriptions:
-
-```markdown
-    ```bash title="src/scripts/deploy.sh"
-    #!/bin/bash
-    ./build.sh && ./deploy.sh
-    ```
-```
-
-## Troubleshooting
-
-### Title not appearing
-
-Ensure the `title="..."` attribute is in the info string (the part immediately
-after the opening ````):
-
-```markdown
-    <!-- Correct -->
-    ```php title="file.php"
-    code here
-    ```
-    
-    <!-- Wrong - title is in code content, not info string -->
-    ```php
-    // title="file.php"
-    code here
-    ```
-```
-
-### Quotes in titles
-
-Use backslash escaping for quotes within titles:
-
-```markdown
-    ```bash title="script with \"quotes\""
-    echo "test"
-    ```
 ```
 
 ## See Also
 
-- [league/commonmark documentation](https://commonmark.thephpleague.com/)
+- [Source](Source.md): display a source file with line numbers and highlighting
+- [Import](Import.md): embed raw file content into a code block
 
 ---
 
-> **This package is part of
-the [alto/commonmark](https://github.com/PhpAlto/commonmark) monorepo.**  
-> This repository is a read-only split — to file issues, open pull requests, or
-> contribute, please use the main repository: *
-*https://github.com/PhpAlto/commonmark**
+> **This package is part of the [alto/commonmark](https://github.com/PhpAlto/commonmark) monorepo.**
+> This repository is a read-only split. To file issues, open pull requests, or contribute, use the main repository: **https://github.com/PhpAlto/commonmark**
