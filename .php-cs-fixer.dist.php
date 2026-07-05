@@ -3,7 +3,7 @@
 $header = <<<'EOF'
 This file is part of the ALTO Commonmark package.
 
-© 2025–present Simon André
+© 2025-Present Simon André
 
 For full copyright and license information, please see
 the LICENSE file distributed with this source code.
