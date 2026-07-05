@@ -4,14 +4,13 @@
     "license": "MIT",
     "type": "library",
     "keywords": [
-        "commonmark",
         "markdown",
-        "commonmark-extension",
+        "commonmark",
         "tabs",
         "tabbed-content",
         "aria",
         "accessibility",
-        "directive",
+        "commonmark-extension",
         "php",
         "alto"
     ],

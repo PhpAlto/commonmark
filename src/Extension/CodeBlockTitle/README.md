@@ -2,7 +2,7 @@
 
 ## Summary
 
-The detail that signals craft. Adds a `title="..."` attribute to any fenced code block info string and wraps the result in a semantic `<figure>`/`<figcaption>` pair. A small delta — but the kind of finish that separates a polished documentation site from a functional one.
+The detail that signals craft. Adds a `title="..."` attribute to any fenced code block info string and wraps the result in a semantic `<figure>`/`<figcaption>` pair. A small delta -- but the kind of finish that separates a polished documentation site from a functional one.
 
 ## Installation
 
@@ -55,4 +55,4 @@ This extension is actively developed in the [`alto/commonmark`](https://github.c
 
 ## License
 
-MIT License — [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)
+MIT License -- [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)

@@ -2,7 +2,7 @@
 
 ## Summary
 
-The flagship of the set. `@source` directives embed a real file — not a copy — into your documentation at parse time, with automatic syntax class detection, precise line-range selection, optional line numbers, and per-line highlighting. Your docs and your source stay in sync by construction.
+The flagship of the set. `@source` directives embed a real file -- not a copy -- into your documentation at parse time, with automatic syntax class detection, precise line-range selection, optional line numbers, and per-line highlighting. Your docs and your source stay in sync by construction.
 
 ## Installation
 
@@ -52,4 +52,4 @@ This extension is actively developed in the [`alto/commonmark`](https://github.c
 
 ## License
 
-MIT License — [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)
+MIT License -- [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)

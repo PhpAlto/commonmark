@@ -4,14 +4,12 @@
     "license": "MIT",
     "type": "library",
     "keywords": [
-        "commonmark",
-        "commonmark-extension",
         "markdown",
+        "commonmark",
         "heading",
         "heading-level",
-        "shift",
-        "transform",
-        "document-composition",
+        "heading-shift",
+        "commonmark-extension",
         "php",
         "alto"
     ],

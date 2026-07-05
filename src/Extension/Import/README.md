@@ -2,7 +2,7 @@
 
 ## Summary
 
-Solves the copy-paste drift problem between documentation and source code. `@import` directives pull external file content directly into fenced code blocks at parse time — with optional line-range selection, language hinting, and indentation control. Your code samples stay in sync with the actual source by definition, not by discipline.
+Solves the copy-paste drift problem between documentation and source code. `@import` directives pull external file content directly into fenced code blocks at parse time -- with optional line-range selection, language hinting, and indentation control. Your code samples stay in sync with the actual source by definition, not by discipline.
 
 ## Installation
 
@@ -53,4 +53,4 @@ This extension is actively developed in the [`alto/commonmark`](https://github.c
 
 ## License
 
-MIT License — [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)
+MIT License -- [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)

@@ -2,7 +2,7 @@
 
 ## Summary
 
-The one you don't need until you really do — then it's irreplaceable. Transforms heading levels after parsing so that content written for one heading context can be safely embedded in another without hierarchy collisions. Supports fixed shifting, explicit level remapping, and a callback option that gives you complete control over every heading in the document.
+The one you don't need until you really do -- then it's irreplaceable. Transforms heading levels after parsing so that content written for one heading context can be safely embedded in another without hierarchy collisions. Supports fixed shifting, explicit level remapping, and a callback option that gives you complete control over every heading in the document.
 
 ## Installation
 
@@ -51,4 +51,4 @@ This extension is actively developed in the [`alto/commonmark`](https://github.c
 
 ## License
 
-MIT License — [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)
+MIT License -- [Simon André](https://smnandre.dev) & [Alto](https://github.com/PhpAlto)
